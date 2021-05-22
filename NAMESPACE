@@ -1,0 +1,8 @@
+export(distribution_guess)
+export(graph_it)
+export(model_predict)
+export(sum_stat)
+import(dplyr)
+import(ggplot2)
+import(ggvis)
+import(forecast)
