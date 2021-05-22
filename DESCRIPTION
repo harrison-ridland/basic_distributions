@@ -1,0 +1,19 @@
+Package: basic_distributions
+Title: guess and graph basic distributions
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Harrison",
+           family = "Ridland",
+           role = c("aut", "cre"),
+           email = "harrison.ridland@gmail.com")
+Description: This pactage predicts and graphes normal, exponential, and uniform distributions
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    forecast,
+    ggplot2,
+    ggvis
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
