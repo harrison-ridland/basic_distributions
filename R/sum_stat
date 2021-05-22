@@ -2,7 +2,7 @@
 #'
 #' @param vec A vector of doubles
 #'
-#' @return A datafram with summary statistics of the vector
+#' @return A dataframe with summary statistics of the vector
 #'
 #' @import dplyr
 #'
