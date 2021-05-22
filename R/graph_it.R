@@ -1,13 +1,8 @@
 #' Puts the various parts of speech together into a full phrase.
 #'
-#' @param num An integer
-#' @param num_word A string corresponding to the integer
-#' @param item A string
-#' @param verb A string
-#' @param adjective A string
-#' @param location A string
+#' @param vec A vector of doubles
 #'
-#' @return A string containing the words in grammatical order.
+#' @return A histogram with overlayed model prediction
 #'
 #' @import forecast
 #' @import dplyr
@@ -25,7 +20,7 @@ graph_it = function(vec){
 geom_histogram(mapping = aes(x = vec, y = ..density..), bins = 12)+
   stat_function(fun= ~dunif(.x,min = min(vec), max = max(vec)), col = "cornflowerblue", lwd = 2)
   }
-  if (type == "normal"){
+  if (type == "normal" | type == "unknown"){
     sds = sd(vec)
     graph = ggplot(data = vecdf) +
 geom_histogram(mapping = aes(x = vec, y = ..density..), bins = 12)+
