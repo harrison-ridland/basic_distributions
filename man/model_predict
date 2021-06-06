@@ -1,0 +1,16 @@
+\name{model_predict}
+\alias{model_predict}
+\title{Models a sorted vector.}
+\usage{
+model_predict(vec)
+}
+\arguments{
+\item{vec}{A vector of doubles or integers}
+
+}
+\value{
+A graph showing the vector sorted. 
+}
+\description{
+Sorts and graphs a vector. Can be used to see the general distribution of a vector. 
+}
