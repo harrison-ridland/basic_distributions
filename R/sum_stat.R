@@ -8,7 +8,7 @@
 #'
 #' @export
 
-sum_stat = function(vec, confidence, guess = 0, graph = FALSE){
+sum_stat = function(vec, confidence, guess = 0){
   means = mean(vec)
   std = sd(vec)
   confid = qnorm((1+confidence)/2)
