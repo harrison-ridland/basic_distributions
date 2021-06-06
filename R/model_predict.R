@@ -1,5 +1,5 @@
   
-#' Puts the various parts of speech together into a full phrase.
+#' Predicts the distibution of a vector
 #'
 #' @param vec A vector of doubles
 #'
